@@ -1,2 +1,2 @@
 # hello-world
-学习你好Git
+你好Git,我来了~
