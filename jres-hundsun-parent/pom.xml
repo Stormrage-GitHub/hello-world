@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jres.hundsun.demo</groupId>
+  <artifactId>jres-hundsun-parent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+  <modules>
+   	<module>jres-hundsun-server</module>
+   	<module>jres-hundsun-client</module>
+   	<module>jres-hundsun-api</module>
+  </modules>
+  
+  <properties>
+  	<jres.hundsun.version>2.0.11</jres.hundsun.version>
+  	<java.version>1.8</java.version>
+  </properties>
+  
+  <dependencies>
+    <!-- jrescloud-starter-rpc-def —— 服务发布与引用组件 -->
+    <dependency>
+ 		<groupId>com.hundsun.jrescloud</groupId>
+ 		<artifactId>jrescloud-starter-rpc-def</artifactId>
+	</dependency>
+  
+  </dependencies>
+  
+  <!-- jrescloud-dependencies —— jrescloud2.0总版本管理 -->
+  <dependencyManagement>
+  		<dependencies>
+   			<dependency>
+    			<groupId>com.hundsun.jrescloud</groupId>
+    			<artifactId>jrescloud-dependencies</artifactId>
+    			<version>${jres.hundsun.version}</version>
+    			<type>pom</type>
+    			<scope>import</scope>
+   			</dependency>
+  		</dependencies>
+	</dependencyManagement>
+	
+</project>

@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>jres.hundsun.demo</groupId>
+    <artifactId>jres-hundsun-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>jres-hundsun-server</artifactId>
+  
+  
+  <dependencies>
+  	<!-- 服务端依赖 API 服务  -->
+  	<dependency>
+  		<groupId>jres.hundsun.demo</groupId>
+  		<artifactId>jres-hundsun-api</artifactId>
+  		<version>${project.version}</version>
+  	</dependency>
+  	
+  	<!-- jrescloud-starter-mybatis —— 数据库访问组件 -->
+  	<dependency>
+ 		<groupId>com.hundsun.jrescloud</groupId>
+ 		<artifactId>jrescloud-starter-mybatis</artifactId>
+	</dependency>
+  </dependencies>
+</project>
